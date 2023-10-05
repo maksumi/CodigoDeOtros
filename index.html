@@ -4,13 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+    *La linea original de ligamiento a la hoja de estilos tiene la ruta mal especificada*
     <link rel="stylesheet" href="assets/styles.css">
+    -->
+    <link rel="stylesheet" href="assets/css/styles.css"> <!-- Ruta corregida -->
     <title>APIs</title>
 </head>
+
 <body>
     <p class="name"></p>
     <p class="blog"></p>
+    <p class="location"></p>
 
-  <script src="../assets/js/app.js"></script>
+    <!--
+    *Igual que el ligamiento al css, la linea original para referenciar el script está mal referenciada pues se sale de la carpeta del proyecto al usar los dos puntos y el slash previo a la ruta "../" cuando debe de referenciarse directamente a la carpeta "assets" pues está al mismo nivel que el archivo html dentro de la carpeta raíz.*
+    <script src="../assets/js/app.js"></script>
+    -->
+    <script src="assets/js/app.js"></script> <!-- Ruta corregida -->
 </body>
 </html>
